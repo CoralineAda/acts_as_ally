@@ -1,0 +1,3 @@
+module ActsAsAlly
+  VERSION = "0.0.1"
+end
