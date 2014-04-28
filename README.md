@@ -19,18 +19,31 @@ Or install it yourself as:
 
 ## Usage
 
+In your model:
+
     class Man < ActiveRecord::Base
       include ActsAsAlly
     end
 
-    > Man.count
-    => 10
+In console:
 
-    > Man.not_all.count
-    => 1
+    2.1.1 :001 > Man.count
+       (0.2ms)  SELECT COUNT(*) FROM "men"
+     => 10
 
-    > Man.not_all.first.cookies
-    => []
+    2.1.1 :002 >  Man.not_all
+        (0.1ms)  SELECT COUNT(*) FROM "men"
+        Man Load (0.1ms)  SELECT "men".* FROM "men" LIMIT 1
+     => [#<Man id: 1, created_at: "2014-04-28 23:22:02", updated_at: "2014-04-28 23:22:02">]
+
+    2.1.1 :003 > Man.not_all.first.cookies
+        Man Load (0.2ms)  SELECT "men".* FROM "men"
+        (0.1ms)  SELECT COUNT(*) FROM "men"
+     => []
+
+## You Might Also Like
+
+If you find this gem useful, check out [WellActually](https://github.com/bantik/well_actually)
 
 ## Contributing
 
