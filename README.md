@@ -26,8 +26,11 @@ Or install it yourself as:
     > Man.count
     => 10
 
-    > Man.not_all
+    > Man.not_all.count
     => 1
+
+    > Man.not_all.first.cookies
+    => []
 
 ## Contributing
 
