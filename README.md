@@ -1,6 +1,7 @@
-# ActsAsAlly
+acts_as_ally
+============
 
-TODO: Write a gem description
+Allows a Rails model to behave like an ally, maybe.
 
 ## Installation
 
@@ -18,7 +19,15 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+  class Man < ActiveRecord::Base
+    include ActsAsAlly
+  end
+
+    > Man.count
+    => 10
+
+    > Man.not_all
+    => 1
 
 ## Contributing
 
@@ -27,3 +36,4 @@ TODO: Write usage instructions here
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new Pull Request
+
