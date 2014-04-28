@@ -19,9 +19,9 @@ Or install it yourself as:
 
 ## Usage
 
-  class Man < ActiveRecord::Base
-    include ActsAsAlly
-  end
+    class Man < ActiveRecord::Base
+      include ActsAsAlly
+    end
 
     > Man.count
     => 10
