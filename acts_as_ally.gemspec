@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["coraline@idolhands.com"]
   spec.summary       = %q{Allows a Rails model to behave like an ally, maybe.}
   spec.description   = %q{Allows a Rails model to behave like an ally, maybe.}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/Bantik/acts_as_ally"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
