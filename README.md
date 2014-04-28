@@ -17,6 +17,10 @@ Or install it yourself as:
 
     $ gem install acts_as_ally
 
+## A Note on Testing
+
+This gem has no tests, because setting expectations for allies is disrespectful and counterproductive.
+
 ## Usage
 
 In your model:
